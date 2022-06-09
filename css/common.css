@@ -1,0 +1,33 @@
+body{
+  width: 100%;
+  
+}
+.textbox{
+  width: 90%;
+  height: 100px;
+  margin-left: 50px;
+  position: relative;
+  background-color: #fff;
+}
+.submit_btn{
+  margin: 8px 153px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.txt{
+  margin-top: 40px;
+  margin-left: 114px;
+  padding-top: 12px;
+  width: 70%;
+  height: 43px;
+  border-radius: 10px;
+  padding-right: 100px;
+  overflow-wrap: break-word;
+}
+
+
+
