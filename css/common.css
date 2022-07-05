@@ -1,14 +1,16 @@
 body{
   width: 100%;
   margin: 0px;
-
+  background-image: url(bg_icon.jpeg);
+  /* background-image: url(bg_icon01.png); */
+  /* background-repeat: no-repeat; */
+  background-size: fixed;
 }
 .textbox{
   width: 90%;
   height: 100px;
   text-align: center;
   position: relative;
-  background-color: #fff;
 }
 div#text_field {
   text-align: center;
@@ -17,39 +19,105 @@ div#text_field {
     margin: 8px 85px 10px 0px;
     padding: 10px;
     position: absolute;
-    bottom: 0px;
+    bottom: 6px;
     right: 14px;
     border-radius: 10px;
     cursor: pointer;
+    background-color: #eeca79c9;
+}
+.textareaBox{
+  border:1px solid;
+  width:300px;
+  height: 200px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  outline: none;
+  padding-top: 50px;
 }
 .txt{
-  margin-top: 40px;
+  margin-top: -9px;
   margin-left: 114px;
-  padding-top: 12px;
+  padding-top: 51px;
   width: 70%;
   height: 43px;
   border-radius: 10px;
   padding-right: 100px;
   overflow-wrap: break-word;
+  outline: none;
 }
-div#addbtnSpot{
-  width: 25%;
-  display: inline;
-  position:relative;
+div.addbtnSpot{
+  width: 29%;
+  display: inline-block;
+  position: relative;
 }
 .spotImg{
-  background-image: url(/images/spot3.svg);
+  background-image: url(spot3.svg);
   background-repeat: no-repeat;
   height: 18px;
   width: 50%;
   position: absolute;
   bottom: 12px;
-  left: 80%;
+  left: 88%;
   cursor: pointer;
 }
-#dlt_btn{
-  opacity: 0;
+ul{
+    padding: 0px;
+    display: inline-block;
+    list-style: none;
 }
-.spotImg:hover #dlt_btn{
-	opacity: 1;
+#dlt_btn{
+  width: 75px;
+  height: 30px;
+  background: #eeca79c9;
+  color: #000000;
+  opacity: 1;
+	position: absolute;
+  transition: all 0.5s ease;
+  top: -30px;
+	right: -39px;
+  display: block;
+  border: none;
+}
+
+/* .spotImg:hover + #dlt_btn{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+} */
+#nav ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none;
+}
+#nav li:hover ul {
+  display: block;
+}
+#nav li li:hover ul {
+  display: block;
+  margin-left: 200px;
+  margin-top: -35px;
+}
+#txt_ttl{
+  font-size: 16px;
+  width: 69.7%;
+  position: relative;
+  top: 26px;
+  left: 0px;
+  border: none;
+  padding-top: 0px;
+  height: 25px;
+  border-radius: 0px;
+  outline: none;
+}
+input#append_ttl {
+  position: absolute;
+  bottom: 231px;
+  left: 26px;
+  width: 330px;
+  border: 0px;
+  font-size: 16px;
+  outline: none;
 }
